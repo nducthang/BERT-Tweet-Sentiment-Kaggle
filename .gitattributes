@@ -1,3 +1,4 @@
 roberta.base.tf/pretrained-roberta-base.h5 filter=lfs diff=lfs merge=lfs -text
 *.h5 filter=lfs diff=lfs merge=lfs -text
 roberta.base.torch/pytorch_model.bin filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
