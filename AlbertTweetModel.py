@@ -6,11 +6,11 @@ class AlbertTweetModel(nn.Module):
     def __init__(self):
         super(AlbertTweetModel, self).__init__()
         config = AlbertConfig.from_pretrained(
-            './albert.torch/albert-large-v2/config.json',
+            './albert.torch/albert-base-v2/config.json',
             output_hidden_states=True
         )
         self.bert = AlbertModel.from_pretrained(
-            './albert.torch/albert-large-v2/pytorch_model.bin',
+            './albert.torch/albert-base-v2/pytorch_model.bin',
             config=config
         )
 

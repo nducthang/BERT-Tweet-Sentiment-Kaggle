@@ -34,7 +34,7 @@ class AlbertTweetDataset(torch.utils.data.Dataset):
         self.labeled = 'selected_text' in df
         # Khởi tạo mã hóa SentencePiece cho Albert
         self.tokenizer = OffsetTokenizer(
-            path_model='./albert.torch/albert-large-v2/spiece.model')
+            path_model='./albert.torch/albert-base-v2/spiece.model')
 
         # self.sp = spm.SentencePieceProcessor(
         #     model_file='./albert.torch/albert-large-v2/spiece.model')
