@@ -51,7 +51,7 @@ class BertTweetDataset(torch.utils.data.Dataset):
         ids = torch.tensor(ids)
         # Tạo mặt nạ, đánh dấu 1 cho toàn bộ câu đầu vào
         # Trừ các phần là PAD
-        masks = torch.where(ids!=1, torch.tensor(1), torch.tensor(0))
+        masks = torch.where(ids!=0, torch.tensor(1), torch.tensor(0))
         offsets = torch.tensor(offsets)
         token_type_ids = torch.tensor(token_type_ids)
 
